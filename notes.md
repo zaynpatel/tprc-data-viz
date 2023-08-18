@@ -1,0 +1,5 @@
+# tprc-data-viz
+Code from 3 plots I created for a TPRC conference paper
+
+One of the questions you might have is, why did you write plots in two different languages? There were two things I considered before plotting: (a) the examples of radial and dumbbell plots in R and Python and (b) how comfortable I was manipulating a language to get it to look like the examples I saw. 
+For radial plots, I didn't like examples from either language; they weren't detailed enough for what I imagined creating. Given my time programming in Python was a year and a half longer than R, I chose to use Python for the radial plot since I thought I had more "manipulation power". Dumbbell plot examples in R were similar to Python's. R's vectorization functions were the tiebreaker since the dumbbell plot required calcuing semi-major/minor axes and eccentricity on every column apogee and perigee (altitude) data. Without R's vectorization I'd be writing multiple for loops and lambda functions with pandas methods to get these numbers and I didn't want to do this.
